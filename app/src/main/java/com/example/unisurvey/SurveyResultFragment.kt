@@ -17,8 +17,9 @@ class SurveyResultFragment : Fragment() {
         val name = arguments?.getString("NAME")
         val email = arguments?.getString("EMAIL")
         val studentId = arguments?.getString("STUDENT_ID")
+        val review = arguments?.getString("REVIEW")
         val resultTextView = view.findViewById<TextView>(R.id.resultTextView)
-        resultTextView.text = "Name: $name\nEmail: $email\nStudent ID: $studentId\nReview : $studentId\n\nThank you for taking the survey....\n\nYour Response has been Recorded...."
+        resultTextView.text = "Name: $name\nEmail: $email\nStudent ID: $studentId\nReview : $review\n\nThank you for taking the survey....\n\nYour Response has been Recorded...."
 
         return view
     }
